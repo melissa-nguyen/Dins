@@ -11,7 +11,7 @@ import SwiftUI
 struct Dins_CapstoneApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchView()
         }
     }
 }

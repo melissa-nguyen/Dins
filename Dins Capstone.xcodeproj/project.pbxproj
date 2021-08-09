@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF8821D226C1A59000CBA486 /* Dins_CapstoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821D126C1A59000CBA486 /* Dins_CapstoneApp.swift */; };
-		FF8821D426C1A59000CBA486 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821D326C1A59000CBA486 /* ContentView.swift */; };
+		FF8821D426C1A59000CBA486 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821D326C1A59000CBA486 /* LaunchView.swift */; };
 		FF8821D626C1A59100CBA486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8821D526C1A59100CBA486 /* Assets.xcassets */; };
 		FF8821D926C1A59100CBA486 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8821D826C1A59100CBA486 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		FF8821CE26C1A59000CBA486 /* Dins Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dins Capstone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8821D126C1A59000CBA486 /* Dins_CapstoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dins_CapstoneApp.swift; sourceTree = "<group>"; };
-		FF8821D326C1A59000CBA486 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF8821D326C1A59000CBA486 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		FF8821D526C1A59100CBA486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF8821D826C1A59100CBA486 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF8821DA26C1A59100CBA486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				FF8821D126C1A59000CBA486 /* Dins_CapstoneApp.swift */,
-				FF8821D326C1A59000CBA486 /* ContentView.swift */,
+				FF8821E226C1A5EE00CBA486 /* Views */,
+				FF8821E126C1A5E500CBA486 /* Models */,
+				FF8821E026C1A5D800CBA486 /* ViewModels */,
 				FF8821D526C1A59100CBA486 /* Assets.xcassets */,
 				FF8821DA26C1A59100CBA486 /* Info.plist */,
 				FF8821D726C1A59100CBA486 /* Preview Content */,
@@ -67,6 +69,28 @@
 				FF8821D826C1A59100CBA486 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF8821E026C1A5D800CBA486 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FF8821E126C1A5E500CBA486 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF8821E226C1A5EE00CBA486 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF8821D326C1A59000CBA486 /* LaunchView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF8821D426C1A59000CBA486 /* ContentView.swift in Sources */,
+				FF8821D426C1A59000CBA486 /* LaunchView.swift in Sources */,
 				FF8821D226C1A59000CBA486 /* Dins_CapstoneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
