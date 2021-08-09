@@ -15,6 +15,7 @@
 		FF8821E626C1B77800CBA486 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821E526C1B77800CBA486 /* Business.swift */; };
 		FF8821E826C1B9FD00CBA486 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821E726C1B9FD00CBA486 /* BusinessSearch.swift */; };
 		FF8821EB26C1BD2700CBA486 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821EA26C1BD2700CBA486 /* Constants.swift */; };
+		FF8821F026C1C8E200CBA486 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821EF26C1C8E200CBA486 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FF8821E526C1B77800CBA486 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		FF8821E726C1B9FD00CBA486 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		FF8821EA26C1BD2700CBA486 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FF8821EF26C1C8E200CBA486 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				FF8821D326C1A59000CBA486 /* LaunchView.swift */,
+				FF8821ED26C1C8CC00CBA486 /* Onboarding */,
+				FF8821EC26C1C8C700CBA486 /* Home */,
+				FF8821EE26C1C8D200CBA486 /* Denied */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,6 +116,28 @@
 				FF8821EA26C1BD2700CBA486 /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FF8821EC26C1C8C700CBA486 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF8821EF26C1C8E200CBA486 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FF8821ED26C1C8CC00CBA486 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		FF8821EE26C1C8D200CBA486 /* Denied */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Denied;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF8821D426C1A59000CBA486 /* LaunchView.swift in Sources */,
+				FF8821F026C1C8E200CBA486 /* HomeView.swift in Sources */,
 				FF8821E626C1B77800CBA486 /* Business.swift in Sources */,
 				FF8821D226C1A59000CBA486 /* DinsCapstoneApp.swift in Sources */,
 				FF8821E826C1B9FD00CBA486 /* BusinessSearch.swift in Sources */,
