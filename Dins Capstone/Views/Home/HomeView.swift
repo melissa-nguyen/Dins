@@ -29,6 +29,8 @@ struct HomeView: View {
                     }
                     Divider()
                     
+                    BusinessList()
+                    
                 }
                 
                 

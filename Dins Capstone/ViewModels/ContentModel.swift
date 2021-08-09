@@ -107,7 +107,7 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
                             case Constants.sightsKey:
                                 self.sights = result.businesses
                             case Constants.restaurantsKey:
-                                self.sights = result.businesses
+                                self.restaurants = result.businesses
                             default:
                                 break
                             }

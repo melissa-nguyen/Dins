@@ -16,6 +16,9 @@
 		FF8821E826C1B9FD00CBA486 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821E726C1B9FD00CBA486 /* BusinessSearch.swift */; };
 		FF8821EB26C1BD2700CBA486 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821EA26C1BD2700CBA486 /* Constants.swift */; };
 		FF8821F026C1C8E200CBA486 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821EF26C1C8E200CBA486 /* HomeView.swift */; };
+		FF8821F326C1CE9300CBA486 /* BusinessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821F226C1CE9300CBA486 /* BusinessList.swift */; };
+		FF8821F526C1D31600CBA486 /* BusinessSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821F426C1D31600CBA486 /* BusinessSectionHeader.swift */; };
+		FF8821F726C1D43B00CBA486 /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821F626C1D43B00CBA486 /* BusinessSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		FF8821E726C1B9FD00CBA486 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		FF8821EA26C1BD2700CBA486 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FF8821EF26C1C8E200CBA486 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FF8821F226C1CE9300CBA486 /* BusinessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessList.swift; sourceTree = "<group>"; };
+		FF8821F426C1D31600CBA486 /* BusinessSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSectionHeader.swift; sourceTree = "<group>"; };
+		FF8821F626C1D43B00CBA486 /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				FF8821EF26C1C8E200CBA486 /* HomeView.swift */,
+				FF8821F126C1CE8300CBA486 /* List */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -138,6 +145,16 @@
 			children = (
 			);
 			path = Denied;
+			sourceTree = "<group>";
+		};
+		FF8821F126C1CE8300CBA486 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				FF8821F226C1CE9300CBA486 /* BusinessList.swift */,
+				FF8821F426C1D31600CBA486 /* BusinessSectionHeader.swift */,
+				FF8821F626C1D43B00CBA486 /* BusinessSection.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +229,11 @@
 				FF8821D426C1A59000CBA486 /* LaunchView.swift in Sources */,
 				FF8821F026C1C8E200CBA486 /* HomeView.swift in Sources */,
 				FF8821E626C1B77800CBA486 /* Business.swift in Sources */,
+				FF8821F526C1D31600CBA486 /* BusinessSectionHeader.swift in Sources */,
 				FF8821D226C1A59000CBA486 /* DinsCapstoneApp.swift in Sources */,
 				FF8821E826C1B9FD00CBA486 /* BusinessSearch.swift in Sources */,
+				FF8821F326C1CE9300CBA486 /* BusinessList.swift in Sources */,
+				FF8821F726C1D43B00CBA486 /* BusinessSection.swift in Sources */,
 				FF8821E426C1A7BD00CBA486 /* ContentModel.swift in Sources */,
 				FF8821EB26C1BD2700CBA486 /* Constants.swift in Sources */,
 			);
