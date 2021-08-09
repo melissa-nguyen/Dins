@@ -19,6 +19,7 @@
 		FF8821F326C1CE9300CBA486 /* BusinessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821F226C1CE9300CBA486 /* BusinessList.swift */; };
 		FF8821F526C1D31600CBA486 /* BusinessSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821F426C1D31600CBA486 /* BusinessSectionHeader.swift */; };
 		FF8821F726C1D43B00CBA486 /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821F626C1D43B00CBA486 /* BusinessSection.swift */; };
+		FF8821F926C1DB9100CBA486 /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8821F826C1DB9100CBA486 /* BusinessRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FF8821F226C1CE9300CBA486 /* BusinessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessList.swift; sourceTree = "<group>"; };
 		FF8821F426C1D31600CBA486 /* BusinessSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSectionHeader.swift; sourceTree = "<group>"; };
 		FF8821F626C1D43B00CBA486 /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
+		FF8821F826C1DB9100CBA486 /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				FF8821F226C1CE9300CBA486 /* BusinessList.swift */,
 				FF8821F426C1D31600CBA486 /* BusinessSectionHeader.swift */,
 				FF8821F626C1D43B00CBA486 /* BusinessSection.swift */,
+				FF8821F826C1DB9100CBA486 /* BusinessRow.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF8821D426C1A59000CBA486 /* LaunchView.swift in Sources */,
+				FF8821F926C1DB9100CBA486 /* BusinessRow.swift in Sources */,
 				FF8821F026C1C8E200CBA486 /* HomeView.swift in Sources */,
 				FF8821E626C1B77800CBA486 /* Business.swift in Sources */,
 				FF8821F526C1D31600CBA486 /* BusinessSectionHeader.swift in Sources */,
