@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BusinessRow: View {
     
-    var business: Business
+     @ObservedObject var business: Business
     
     var body: some View {
        
@@ -17,6 +17,10 @@ struct BusinessRow: View {
             
             HStack {
                 // Image
+                let uiImage = UIImage(data: business.imageData ?? Data())
+                Image(uiImage: uiImage ?? UIImage())
+                    .frame(width: 58, height: 58)
+                    .cornerRadius(15)
                 
                 // Name and distance
                 VStack (alignment: .leading) {

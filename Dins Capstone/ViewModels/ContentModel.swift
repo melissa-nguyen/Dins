@@ -100,6 +100,13 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
                         let decoder = JSONDecoder()
                         let result = try decoder.decode(BusinessSearch.self, from: data!)
                         
+                        
+                        
+                        // Call the get image function of the businesses
+                        for b in result.businesses {
+                            b.getImageData()
+                        }
+                        
                         DispatchQueue.main.async {
                             //  Assign results to the appropriate property
                             
