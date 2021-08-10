@@ -34,6 +34,7 @@ struct HomeView: View {
                         BusinessList()
                         
                     }.padding([.horizontal, .top])
+                    .navigationBarHidden(true)
                     
                     
                 } else {
