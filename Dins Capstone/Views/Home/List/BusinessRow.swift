@@ -19,8 +19,10 @@ struct BusinessRow: View {
                 // Image
                 let uiImage = UIImage(data: business.imageData ?? Data())
                 Image(uiImage: uiImage ?? UIImage())
+                    .resizable()
                     .frame(width: 58, height: 58)
                     .cornerRadius(15)
+                    .scaledToFit()
                 
                 // Name and distance
                 VStack (alignment: .leading) {
