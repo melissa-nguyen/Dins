@@ -26,6 +26,7 @@
 		FF88220326C4483200CBA486 /* BusinessTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88220226C4483200CBA486 /* BusinessTitle.swift */; };
 		FF88220526C458A600CBA486 /* DirectionsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88220426C458A600CBA486 /* DirectionsMap.swift */; };
 		FF88220726C4756300CBA486 /* OnboardngView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88220626C4756300CBA486 /* OnboardngView.swift */; };
+		FF88220926C481F800CBA486 /* LocationDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88220826C481F800CBA486 /* LocationDeniedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		FF88220226C4483200CBA486 /* BusinessTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTitle.swift; sourceTree = "<group>"; };
 		FF88220426C458A600CBA486 /* DirectionsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsMap.swift; sourceTree = "<group>"; };
 		FF88220626C4756300CBA486 /* OnboardngView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardngView.swift; sourceTree = "<group>"; };
+		FF88220826C481F800CBA486 /* LocationDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDeniedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +124,10 @@
 		FF8821E226C1A5EE00CBA486 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF8821EE26C1C8D200CBA486 /* Denied */,
 				FF8821D326C1A59000CBA486 /* LaunchView.swift */,
 				FF8821ED26C1C8CC00CBA486 /* Onboarding */,
 				FF8821EC26C1C8C700CBA486 /* Home */,
-				FF8821EE26C1C8D200CBA486 /* Denied */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,6 +162,7 @@
 		FF8821EE26C1C8D200CBA486 /* Denied */ = {
 			isa = PBXGroup;
 			children = (
+				FF88220826C481F800CBA486 /* LocationDeniedView.swift */,
 			);
 			path = Denied;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				FF88220126C3642400CBA486 /* DirectionsView.swift in Sources */,
 				FF8821F026C1C8E200CBA486 /* HomeView.swift in Sources */,
 				FF8821E626C1B77800CBA486 /* Business.swift in Sources */,
+				FF88220926C481F800CBA486 /* LocationDeniedView.swift in Sources */,
 				FF8821F526C1D31600CBA486 /* BusinessSectionHeader.swift in Sources */,
 				FF8821D226C1A59000CBA486 /* DinsCapstoneApp.swift in Sources */,
 				FF8821FC26C2047900CBA486 /* BusinessDetail.swift in Sources */,

@@ -27,6 +27,7 @@ struct LaunchView: View {
             HomeView()
         } else {
             // If denied, show denied view
+            LocationDeniedView()
         }
 
     }
