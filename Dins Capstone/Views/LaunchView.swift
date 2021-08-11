@@ -19,6 +19,7 @@ struct LaunchView: View {
         if model.authorizationState == .notDetermined{
             
             // If undetermined, show onboarding
+            OnboardngView()
         }
         else if model.authorizationState == .authorizedAlways || model.authorizationState == .authorizedWhenInUse {
             
