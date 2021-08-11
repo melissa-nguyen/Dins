@@ -134,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				FF8821EF26C1C8E200CBA486 /* HomeView.swift */,
+				FF8821FA26C2041900CBA486 /* Detail */,
 				FF8821FD26C32BCC00CBA486 /* Map */,
 				FF8821F126C1CE8300CBA486 /* List */,
 			);
@@ -157,7 +158,6 @@
 		FF8821F126C1CE8300CBA486 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				FF8821FA26C2041900CBA486 /* Detail */,
 				FF8821F226C1CE9300CBA486 /* BusinessList.swift */,
 				FF8821F426C1D31600CBA486 /* BusinessSectionHeader.swift */,
 				FF8821F626C1D43B00CBA486 /* BusinessSection.swift */,
