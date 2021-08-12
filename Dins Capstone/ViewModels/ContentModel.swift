@@ -7,6 +7,8 @@
 
 import Foundation
 import CoreLocation
+import Firebase
+
 
 class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     
@@ -22,11 +24,13 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     override init () {
         // Init method of NSObject
         super.init()
+        // Configure Firebase
+        FirebaseApp.configure()
         
         // Set content model as the delegate of the location manager
         locationManager.delegate = self
         
-    }
+    }    
     
     func requestGeolocationPermission() {
         
@@ -152,7 +156,6 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
                             // ANOTHER WAY OF IMPLEMENTING CONDITIONALS end
                             
                         }
-                        
                       
                     }
                     catch {
