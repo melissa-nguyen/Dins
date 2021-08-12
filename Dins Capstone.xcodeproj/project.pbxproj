@@ -49,6 +49,7 @@
 		FF88223226C4A4C300CBA486 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = FF88223126C4A4C300CBA486 /* FirebaseDynamicLinks */; };
 		FF88223426C4A4C300CBA486 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = FF88223326C4A4C300CBA486 /* FirebaseFunctions */; };
 		FF88223626C4A69800CBA486 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF88223526C4A69800CBA486 /* GoogleService-Info.plist */; };
+		FF88223926C59CFD00CBA486 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88223826C59CFD00CBA486 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		FF88220626C4756300CBA486 /* OnboardngView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardngView.swift; sourceTree = "<group>"; };
 		FF88220826C481F800CBA486 /* LocationDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDeniedView.swift; sourceTree = "<group>"; };
 		FF88223526C4A69800CBA486 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF88223826C59CFD00CBA486 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				FF8821EF26C1C8E200CBA486 /* HomeView.swift */,
+				FF88223726C59CE700CBA486 /* Card */,
 				FF8821FA26C2041900CBA486 /* Detail */,
 				FF8821FD26C32BCC00CBA486 /* Map */,
 				FF8821F126C1CE8300CBA486 /* List */,
@@ -240,6 +243,14 @@
 				FF88220426C458A600CBA486 /* DirectionsMap.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		FF88223726C59CE700CBA486 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				FF88223826C59CFD00CBA486 /* CardView.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +356,7 @@
 				FF8821F026C1C8E200CBA486 /* HomeView.swift in Sources */,
 				FF8821E626C1B77800CBA486 /* Business.swift in Sources */,
 				FF88220926C481F800CBA486 /* LocationDeniedView.swift in Sources */,
+				FF88223926C59CFD00CBA486 /* CardView.swift in Sources */,
 				FF8821F526C1D31600CBA486 /* BusinessSectionHeader.swift in Sources */,
 				FF8821D226C1A59000CBA486 /* DinsCapstoneApp.swift in Sources */,
 				FF8821FC26C2047900CBA486 /* BusinessDetail.swift in Sources */,
