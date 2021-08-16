@@ -9,9 +9,6 @@ import SwiftUI
 
 struct CardView: View {
 
-    
-    @State private var translation: CGSize = .zero
-    
     // MARK: - user
 //    private var user: User
 //    private var onRemove: (_ user: User) -> Void
@@ -24,6 +21,14 @@ struct CardView: View {
 //    }
     
     // MARK: - bizzes [Biz]
+    @State private var translation: CGSize = .zero
+    
+    @State private var swipeStatus: LikeDislike = .none
+    
+    private enum LikeDislike: Int {
+        case like, dislike, none
+    }
+    
     private var biz: Biz
     private var onRemove: (_ biz: Biz) -> Void
 
@@ -41,17 +46,41 @@ struct CardView: View {
     
     var body: some View {
         
-        
         GeometryReader { geometry in
             
             VStack (alignment: .leading) {
-                Image(self.biz.imageName)
-//                Image(self.user.imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-//                    .scaledToFill()
-                    .frame(width: geometry.size.width, height: geometry.size.height * 0.75)
-                    .clipped()
+                
+                ZStack (alignment: self.swipeStatus == .like ? .topLeading : .topTrailing) {
+                    Image(self.biz.imageName)
+    //                Image(self.user.imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+    //                    .scaledToFill()
+                        .frame(width: geometry.size.width, height: geometry.size.height * 0.75)
+                        .clipped()
+                    
+                    if self.swipeStatus == .like {
+                        Text("LIKE")
+                            .font(.headline)
+                            .padding()
+                            .cornerRadius(10)
+                            .foregroundColor(Color.green)
+                            .overlay(RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.green, lineWidth: 3.0)
+                            ).padding(24)
+                            .rotationEffect(Angle.degrees(-45))
+                    } else if self.swipeStatus == .dislike {
+                        Text("DISLIKE")
+                            .font(.headline)
+                            .padding()
+                            .cornerRadius(10)
+                            .foregroundColor(Color.red)
+                            .overlay(RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.red, lineWidth: 3.0)
+                            ).padding(.top, 45)
+                            .rotationEffect(Angle.degrees(45))
+                    }
+                }
                 
                 HStack {
                     VStack (alignment: .leading, spacing: 6) {
@@ -90,8 +119,20 @@ struct CardView: View {
                 DragGesture()
                     .onChanged { value in
                         self.translation = value.translation
+                        
+                        if (self.getGesturePercentage(geometry, from: value)) >= self.thresholdPercentage {
+                            self.swipeStatus = .like
+                        } else if self.getGesturePercentage(geometry, from: value) <= -self.thresholdPercentage {
+                            self.swipeStatus = .dislike
+                        } else {
+                            self.swipeStatus = .none
+                        }
                     }.onEnded { value in
                         if abs(self.getGesturePercentage(geometry, from: value)) > self.thresholdPercentage {
+                            if self.swipeStatus == .like {
+                                // session.likeResttaurant(name: self.name)
+                                print("liked \(biz.name)")
+                            }
                             self.onRemove(self.biz)
                         } else {
                             self.translation = .zero
@@ -102,5 +143,4 @@ struct CardView: View {
         }
         .frame(height: 500).padding()
     }
-    
 }
