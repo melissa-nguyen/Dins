@@ -22,9 +22,11 @@ struct LaunchView: View {
             OnboardngView()
         }
         else if model.authorizationState == .authorizedAlways || model.authorizationState == .authorizedWhenInUse {
+            ContentView()
             
             // If approved, show home view
-            HomeView()
+//            HomeView()
+            
         } else {
             // If denied, show denied view
             LocationDeniedView()

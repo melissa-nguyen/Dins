@@ -15,9 +15,16 @@ struct BusinessDetail: View {
     let blue = Color(red: 0/255, green: 130/255, blue: 167/255)
     let turquoise = Color(red: 55/255, green: 197/255, blue: 192/255)
     
+    // State for card rotation
+    @State private var translation: CGSize = .zero
+    
+    
     var body: some View {
         
+        
         // MARK: - TINDER CARD STACK
+        
+            
         GeometryReader { geometry in
             
             VStack (alignment: .leading) {
@@ -29,22 +36,7 @@ struct BusinessDetail: View {
                     .scaledToFill()
                     .frame(width: geometry.size.width, height: geometry.size.height  * 0.65) // 3
                     .clipped()
-                
-                // HStack with Business Name, Address, Reviews & Phone
-//                HStack {
-//                    VStack (alignment: .leading, spacing: 6) {
-//                        // Name, Address & Rating
-//                        Text(business.name ?? "")
-//                            .font(.title)
-//                            .bold()
-//                        Text(business.location?.address1 ?? "")
-//                            .font(.subheadline)
-//                            .bold()
-//                        VStack (alignment: .leading) {
-//                            Image("regular_\(business.rating ?? 0)")
-//                            Text("\(business.reviewCount ?? 0) Reviews")
-//                                .font(.caption)
-//                        }
+
                 HStack {
                     VStack(alignment: .leading, spacing: 6) {
                         Text(business.name ?? "")
@@ -54,8 +46,6 @@ struct BusinessDetail: View {
                             .font(.subheadline)
                             .bold()
                         Image("regular_\(business.rating ?? 0)")
-//                        Text("\(business.reviewCount ?? 0) Reviews")
-//                            .font(.subheadline)
                             .foregroundColor(.gray)
                     }
                     Spacer()
@@ -68,11 +58,23 @@ struct BusinessDetail: View {
             .background(Color.white)
             .cornerRadius(10)
             .shadow(radius: 5)
+            .animation(.interactiveSpring())
+            .offset(x: self.translation.width, y: 0)
+            .rotationEffect(.degrees(Double(self.translation.width / geometry.size.width) * 25), anchor: .bottom)
+            .gesture(
+                DragGesture()
+                    .onChanged { value in
+                        self.translation = value.translation
+                    }.onEnded { value in
+                        self.translation = .zero
+                    }
+            )
         
         }
         .frame(height: 500)
         .padding()
-        
+            
+
         
         
         
@@ -181,6 +183,18 @@ struct BusinessDetail: View {
 //        }
         
     }
+    
+//    // MARK: - functions to return the CardVieews width for the given offset in the array
+//    private func getCardWidth(_ geometry: GeometryProxy, id: Int) -> CGFloat {
+//        let offset: CGFloat = CGFloat(businesses.count - 1 - id) * 10
+//        return geometry.size.width - offset
+//    }
+//
+//    private func getCardOffset(_ geometry: GeometryProxy, id: Int) -> CGFloat {
+//        return CGFloat(businesses.count - 1 - id) * 10
+//    }
+    
+    
 }
 
 

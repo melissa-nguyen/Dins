@@ -8,9 +8,9 @@
 import Foundation
 
 class Business: Decodable, Identifiable, ObservableObject {
-    
+
     @Published var imageData: Data?
-    
+
     var id: String?
     var alias: String?
     var name: String?
@@ -27,14 +27,14 @@ class Business: Decodable, Identifiable, ObservableObject {
     var phone: String?
     var displayPhone: String?
     var distance: Double?
-    
+
     enum CodingKeys: String, CodingKey {
-        
+
         case imageUrl = "image_url"
         case isClosed = "is_closed"
         case reviewCount = "review_count"
         case displayPhone = "display_phone"
-        
+
         case id
         case alias
         case name
@@ -48,23 +48,23 @@ class Business: Decodable, Identifiable, ObservableObject {
         case phone
         case distance
     }
-    
+
     func getImageData() {
-        
+
         // Check that image url isn't nil
         guard imageUrl != nil else {
             return
         }
-        
+
         // Download the data for the image
         if let url = URL(string: imageUrl!) {
-            
+
             // Get a session
             let session = URLSession.shared
             let dataTask = session.dataTask(with: url) { (data, response, error) in
-                
+
                 if error == nil {
-                    
+
                     DispatchQueue.main.async {
                         // Set the image data
                         self.imageData = data!
@@ -73,9 +73,9 @@ class Business: Decodable, Identifiable, ObservableObject {
             }
             dataTask.resume()
         }
-        
+
     }
-    
+
 }
 
 struct Category: Decodable {
@@ -97,11 +97,11 @@ struct Location: Decodable {
     var country: String?
     var state: String?
     var displayAddress: [String]?
-    
+
     enum CodingKeys: String, CodingKey {
         case zipCode = "zip_code"
         case displayAddress = "display_address"
-        
+
         case address1
         case address2
         case address3
@@ -109,5 +109,5 @@ struct Location: Decodable {
         case country
         case state
     }
-    
+
 }

@@ -30,7 +30,7 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
         // Set content model as the delegate of the location manager
         locationManager.delegate = self
         
-    }    
+    }
     
     func requestGeolocationPermission() {
         
@@ -88,6 +88,7 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
         
     }
     
+    
 //    MARK: - Yelp API Methods
     func getBusinesses(category: String, location: CLLocation) {
         
@@ -97,7 +98,7 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
             URLQueryItem(name: "latitude", value: String(location.coordinate.latitude)),
             URLQueryItem(name: "longitude", value: String(location.coordinate.longitude)),
             URLQueryItem(name: "categories", value: category),
-            URLQueryItem(name: "limit", value: "6")
+            URLQueryItem(name: "limit", value: "10")
         ]
         let url = urlComponents?.url
         
@@ -145,16 +146,6 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
                             default:
                                 break
                             }
-                            
-                            // ANOTHER WAY OF IMPLEMENTING CONDITIONALS strt
-//                            if category == Constants.sightsKey {
-//                                self.sights = result.businesses
-//                            }
-//                            else if category == Constants.restaurantsKey {
-//                                self.restaurants = result.businesses
-//                            }
-                            // ANOTHER WAY OF IMPLEMENTING CONDITIONALS end
-                            
                         }
                       
                     }

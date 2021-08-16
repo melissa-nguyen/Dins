@@ -25,7 +25,7 @@
 		FF88220126C3642400CBA486 /* DirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88220026C3642400CBA486 /* DirectionsView.swift */; };
 		FF88220326C4483200CBA486 /* BusinessTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88220226C4483200CBA486 /* BusinessTitle.swift */; };
 		FF88220526C458A600CBA486 /* DirectionsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88220426C458A600CBA486 /* DirectionsMap.swift */; };
-		FF88220726C4756300CBA486 /* OnboardngView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88220626C4756300CBA486 /* OnboardngView.swift */; };
+		FF88220726C4756300CBA486 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88220626C4756300CBA486 /* OnboardingView.swift */; };
 		FF88220926C481F800CBA486 /* LocationDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88220826C481F800CBA486 /* LocationDeniedView.swift */; };
 		FF88220C26C4A4C300CBA486 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FF88220B26C4A4C300CBA486 /* FirebaseAppDistribution-Beta */; };
 		FF88220E26C4A4C300CBA486 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FF88220D26C4A4C300CBA486 /* FirebaseInAppMessaging-Beta */; };
@@ -50,6 +50,8 @@
 		FF88223426C4A4C300CBA486 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = FF88223326C4A4C300CBA486 /* FirebaseFunctions */; };
 		FF88223626C4A69800CBA486 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF88223526C4A69800CBA486 /* GoogleService-Info.plist */; };
 		FF88223926C59CFD00CBA486 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88223826C59CFD00CBA486 /* CardView.swift */; };
+		FF88223B26C893F000CBA486 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88223A26C893F000CBA486 /* ContentView.swift */; };
+		FF88223D26C8A6E000CBA486 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88223C26C8A6E000CBA486 /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,10 +75,12 @@
 		FF88220026C3642400CBA486 /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
 		FF88220226C4483200CBA486 /* BusinessTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTitle.swift; sourceTree = "<group>"; };
 		FF88220426C458A600CBA486 /* DirectionsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsMap.swift; sourceTree = "<group>"; };
-		FF88220626C4756300CBA486 /* OnboardngView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardngView.swift; sourceTree = "<group>"; };
+		FF88220626C4756300CBA486 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FF88220826C481F800CBA486 /* LocationDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDeniedView.swift; sourceTree = "<group>"; };
 		FF88223526C4A69800CBA486 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF88223826C59CFD00CBA486 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FF88223A26C893F000CBA486 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF88223C26C8A6E000CBA486 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				FF8821E326C1A7BD00CBA486 /* ContentModel.swift */,
+				FF88223A26C893F000CBA486 /* ContentView.swift */,
+				FF88223C26C8A6E000CBA486 /* LocationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -202,7 +208,7 @@
 		FF8821ED26C1C8CC00CBA486 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				FF88220626C4756300CBA486 /* OnboardngView.swift */,
+				FF88220626C4756300CBA486 /* OnboardingView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -353,8 +359,10 @@
 				FF8821D426C1A59000CBA486 /* LaunchView.swift in Sources */,
 				FF8821F926C1DB9100CBA486 /* BusinessRow.swift in Sources */,
 				FF88220126C3642400CBA486 /* DirectionsView.swift in Sources */,
+				FF88223D26C8A6E000CBA486 /* LocationViewModel.swift in Sources */,
 				FF8821F026C1C8E200CBA486 /* HomeView.swift in Sources */,
 				FF8821E626C1B77800CBA486 /* Business.swift in Sources */,
+				FF88223B26C893F000CBA486 /* ContentView.swift in Sources */,
 				FF88220926C481F800CBA486 /* LocationDeniedView.swift in Sources */,
 				FF88223926C59CFD00CBA486 /* CardView.swift in Sources */,
 				FF8821F526C1D31600CBA486 /* BusinessSectionHeader.swift in Sources */,
@@ -366,7 +374,7 @@
 				FF8821FF26C32BE900CBA486 /* BusinessMap.swift in Sources */,
 				FF8821F726C1D43B00CBA486 /* BusinessSection.swift in Sources */,
 				FF8821E426C1A7BD00CBA486 /* ContentModel.swift in Sources */,
-				FF88220726C4756300CBA486 /* OnboardngView.swift in Sources */,
+				FF88220726C4756300CBA486 /* OnboardingView.swift in Sources */,
 				FF8821EB26C1BD2700CBA486 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
